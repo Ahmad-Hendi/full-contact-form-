@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="../public/css/register.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="title">
+    Register Here
+  </div>
+  <div class="social_media">
+    <div class="item">
+      <i class="fab fa-facebook-f"></i>
+    </div>
+    <div class="item">
+      <i class="fab fa-twitter"></i>
+    </div>
+    <div class="item">
+      <i class="fab fa-google-plus-g"></i>
+    </div>
+  </div>
+  
+  <div class="form" >
+    <!-- action: is where i am gonna send all the values  -->
+    <!-- ex here i want to send the valies from this form to auth/resgiter -->
+    <!-- method : is to specify which kinnd of http method we need to use -->
+    <form action="register" method="POST">
+    <div class="input_field">
+      <input type="text" placeholder="firstName" class="input" name="firstName">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="input_field">
+      <input type="text" placeholder="lasttName" class="input" name="lasttName">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="input_field">
+      <input type="text" placeholder="Email" class="input" name="email">
+      <i class="far fa-envelope"></i>
+    </div>
+    <div class="input_field">
+      <input type="password" placeholder="Password" class="input" name="password">
+      <i class="fas fa-lock"></i>
+    </div>
+    <div class="input_field">
+      <input type="password" placeholder="Password Confirm" class="input" name="passwordConfirm">
+      <i class="fas fa-lock"></i>
+    </div>
+    <div class="btn">
+      <button type="submit">Register</button>
+    </div>
+
+    <!-- {{#if message }}
+      <h4>{{ message }} </h4>
+    {{/if}} -->
+
+    </form>
+  </div>
+</div>	
+	
+</body>
+</html>
